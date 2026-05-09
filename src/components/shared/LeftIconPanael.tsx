@@ -44,137 +44,281 @@ const LeftIconPanael = () => {
             </div>
             {/* icons */}
             <div className="flex h-15 lg:h-[calc(100vh-110px)] lg:flex-col items-center justify-center gap-6 md:gap-8 lg:gap-6 text-icon">
+                {/* Home */}
                 <IconHover label="Home">
-                    <button className="size-9 flex justify-center items-center [&_svg]:size-5.5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <button className="size-9 flex justify-center items-center [&_svg]:size-5.5 group relative">
+                        {/* Stroke - default */}
+                        <svg
+                            className="absolute transition-opacity duration-300 opacity-100 group-hover:opacity-0"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                        >
                             <path
                                 d="M9.23051 2.58494L2.87801 7.67243C2.16301 8.24076 1.70467 9.44163 1.86051 10.34L3.07968 17.6366C3.29968 18.9383 4.54634 19.9924 5.86634 19.9924H16.133C17.4438 19.9924 18.6997 18.9291 18.9197 17.6366L20.1388 10.34C20.2855 9.44163 19.8272 8.24076 19.1213 7.67243L12.7688 2.59411C11.788 1.80578 10.2022 1.80577 9.23051 2.58494Z"
                                 stroke="currentColor"
                                 strokeWidth="1.5"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                            ></path>
+                            />
                             <path
                                 d="M11.0007 14.2083C12.2663 14.2083 13.2923 13.1823 13.2923 11.9167C13.2923 10.651 12.2663 9.625 11.0007 9.625C9.735 9.625 8.70898 10.651 8.70898 11.9167C8.70898 13.1823 9.735 14.2083 11.0007 14.2083Z"
                                 stroke="currentColor"
                                 strokeWidth="1.5"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                            ></path>
+                            />
+                        </svg>
+                        {/* Fill - hovered */}
+                        <svg
+                            className="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                        >
+                            <path
+                                d="M9.23051 2.58494L2.87801 7.67243C2.16301 8.24076 1.70467 9.44163 1.86051 10.34L3.07968 17.6366C3.29968 18.9383 4.54634 19.9924 5.86634 19.9924H16.133C17.4438 19.9924 18.6997 18.9291 18.9197 17.6366L20.1388 10.34C20.2855 9.44163 19.8272 8.24076 19.1213 7.67243L12.7688 2.59411C11.788 1.80578 10.2022 1.80577 9.23051 2.58494Z"
+                                fill="currentColor"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            />
+                            <path
+                                d="M11.0007 14.2083C12.2663 14.2083 13.2923 13.1823 13.2923 11.9167C13.2923 10.651 12.2663 9.625 11.0007 9.625C9.735 9.625 8.70898 10.651 8.70898 11.9167C8.70898 13.1823 9.735 14.2083 11.0007 14.2083Z"
+                                fill="white"
+                                fillOpacity="0.5"
+                                stroke="white"
+                                strokeOpacity="0.5"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            />
                         </svg>
                     </button>
                 </IconHover>
+
+                {/* Read Quran */}
                 <IconHover label="Read Quran">
-                    <button className="size-9 flex justify-center items-center [&_svg]:size-5.5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                    <button className="size-9 flex justify-center items-center [&_svg]:size-5.5 group relative">
+                        {/* Stroke - default */}
+                        <svg
+                            className="absolute opacity-100 group-hover:opacity-0"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 26 26"
+                            fill="none"
+                        >
                             <path
                                 opacity="0.4"
                                 d="M20.2264 2.16675H18.168C15.8064 2.16675 14.5605 3.41258 14.5605 5.77425V7.83258C14.5605 10.1942 15.8064 11.4401 18.168 11.4401H20.2264C22.588 11.4401 23.8339 10.1942 23.8339 7.83258V5.77425C23.8339 3.41258 22.588 2.16675 20.2264 2.16675Z"
                                 fill="currentColor"
-                            ></path>
+                            />
                             <path
                                 opacity="0.4"
                                 d="M7.84268 14.5491H5.78435C3.41185 14.5491 2.16602 15.7949 2.16602 18.1566V20.2149C2.16602 22.5874 3.41185 23.8332 5.77352 23.8332H7.83185C10.1935 23.8332 11.4394 22.5874 11.4394 20.2257V18.1674C11.4502 15.7949 10.2043 14.5491 7.84268 14.5491Z"
                                 fill="currentColor"
-                            ></path>
+                            />
                             <path
                                 d="M6.81352 11.4617C9.38026 11.4617 11.461 9.38099 11.461 6.81425C11.461 4.2475 9.38026 2.16675 6.81352 2.16675C4.24677 2.16675 2.16602 4.2475 2.16602 6.81425C2.16602 9.38099 4.24677 11.4617 6.81352 11.4617Z"
                                 fill="currentColor"
-                            ></path>
+                            />
                             <path
                                 d="M19.1866 23.8333C21.7533 23.8333 23.8341 21.7526 23.8341 19.1858C23.8341 16.6191 21.7533 14.5383 19.1866 14.5383C16.6198 14.5383 14.5391 16.6191 14.5391 19.1858C14.5391 21.7526 16.6198 23.8333 19.1866 23.8333Z"
                                 fill="currentColor"
-                            ></path>
+                            />
+                        </svg>
+                        {/* Fill - hovered (same icon, just full opacity) */}
+                        <svg
+                            className="absolute opacity-0 group-hover:opacity-100"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 26 26"
+                            fill="none"
+                        >
+                            <path
+                                opacity="0.4"
+                                d="M20.2264 2.16675H18.168C15.8064 2.16675 14.5605 3.41258 14.5605 5.77425V7.83258C14.5605 10.1942 15.8064 11.4401 18.168 11.4401H20.2264C22.588 11.4401 23.8339 10.1942 23.8339 7.83258V5.77425C23.8339 3.41258 22.588 2.16675 20.2264 2.16675Z"
+                                fill="currentColor"
+                            />
+                            <path
+                                opacity="0.4"
+                                d="M7.84268 14.5491H5.78435C3.41185 14.5491 2.16602 15.7949 2.16602 18.1566V20.2149C2.16602 22.5874 3.41185 23.8332 5.77352 23.8332H7.83185C10.1935 23.8332 11.4394 22.5874 11.4394 20.2257V18.1674C11.4502 15.7949 10.2043 14.5491 7.84268 14.5491Z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="M6.81352 11.4617C9.38026 11.4617 11.461 9.38099 11.461 6.81425C11.461 4.2475 9.38026 2.16675 6.81352 2.16675C4.24677 2.16675 2.16602 4.2475 2.16602 6.81425C2.16602 9.38099 4.24677 11.4617 6.81352 11.4617Z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="M19.1866 23.8333C21.7533 23.8333 23.8341 21.7526 23.8341 19.1858C23.8341 16.6191 21.7533 14.5383 19.1866 14.5383C16.6198 14.5383 14.5391 16.6191 14.5391 19.1858C14.5391 21.7526 16.6198 23.8333 19.1866 23.8333Z"
+                                fill="currentColor"
+                            />
                         </svg>
                     </button>
                 </IconHover>
+
+                {/* Quran Go to Ayah */}
                 <IconHover label="Quran Go to Ayah">
-                    <button className="size-9 flex justify-center items-center [&_svg]:size-5.5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <button className="size-9 flex justify-center items-center [&_svg]:size-5.5 group relative">
+                        {/* Stroke - default */}
+                        <svg
+                            className="absolute transition-opacity duration-300 opacity-100 group-hover:opacity-0"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                        >
                             <path
                                 d="M6.78305 5.79323L14.5655 3.19906C18.058 2.0349 19.9555 3.94156 18.8005 7.43406L16.2064 15.2166C14.4647 20.4507 11.6047 20.4507 9.86305 15.2166L9.09305 12.9066L6.78305 12.1366C1.54888 10.3949 1.54888 7.54406 6.78305 5.79323Z"
                                 stroke="currentColor"
                                 strokeWidth="1.5"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                            ></path>
+                            />
                             <path
                                 d="M9.26758 12.5125L12.5492 9.22168"
                                 stroke="currentColor"
                                 strokeWidth="1.5"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                            ></path>
+                            />
+                        </svg>
+                        {/* Fill - hovered */}
+                        <svg
+                            className="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                        >
+                            <path
+                                d="M6.78305 5.79323L14.5655 3.19906C18.058 2.0349 19.9555 3.94156 18.8005 7.43406L16.2064 15.2166C14.4647 20.4507 11.6047 20.4507 9.86305 15.2166L9.09305 12.9066L6.78305 12.1366C1.54888 10.3949 1.54888 7.54406 6.78305 5.79323Z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="M9.26758 12.5125L12.5492 9.22168"
+                                stroke="white"
+                                strokeOpacity="0.6"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            />
                         </svg>
                     </button>
                 </IconHover>
+
+                {/* Bookmark */}
                 <IconHover label="Bookmark">
-                    <button className="size-9 flex justify-center items-center [&_svg]:size-5.5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
+                    <button className="size-9 flex justify-center items-center [&_svg]:size-5.5 group relative">
+                        {/* Stroke - default */}
+                        <svg
+                            className="absolute transition-opacity duration-300 opacity-100 group-hover:opacity-0"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 18"
+                            fill="none"
+                        >
                             <path
                                 d="M1.64453 13.7513V7.17862C1.64453 4.29211 1.64453 2.84886 2.57528 1.95214C3.50603 1.05542 5.00405 1.05542 8.00009 1.05542C10.9961 1.05542 12.4942 1.05542 13.4249 1.95214C14.3556 2.84886 14.3556 4.29211 14.3556 7.17862V13.7513C14.3556 15.5832 14.3556 16.4991 13.7417 16.827C12.5527 17.4618 10.3224 15.3437 9.26325 14.7059C8.64899 14.336 8.34186 14.151 8.00009 14.151C7.65832 14.151 7.35118 14.336 6.73692 14.7059C5.67777 15.3437 3.4475 17.4618 2.25852 16.827C1.64453 16.4991 1.64453 15.5832 1.64453 13.7513Z"
                                 stroke="currentColor"
                                 strokeWidth="1.38569"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                            ></path>
+                            />
                             <path
                                 d="M1.64453 5.02588H14.3556"
                                 stroke="currentColor"
                                 strokeWidth="1.38569"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                            ></path>
+                            />
                         </svg>
-
-                        {/* hoverd style */}
-                        {/* <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
-                        <path
-                            opacity="0.4"
-                            d="M1.48828 16.6148V15.1063C1.48828 11.6948 1.48897 10.6125 1.48828 9.42075C2.74018 9.42073 5.45877 9.42073 8.99967 9.42073C12.5405 9.42073 15.2592 9.41996 16.5111 9.4208C16.5111 10.6727 16.5111 11.6948 16.5111 15.1063V16.6148C16.5111 18.7798 16.5111 19.8623 15.7855 20.2498C14.3802 21.0001 11.7443 18.4967 10.4926 17.743C9.76659 17.3058 9.4036 17.0872 8.99967 17.0872C8.59575 17.0872 8.23276 17.3058 7.50678 17.743C6.25501 18.4967 3.61914 21.0001 2.21393 20.2498C1.48828 19.8623 1.48828 18.7798 1.48828 16.6148Z"
-                            fill="currentColor"
-                            stroke="currentColor"
-                            stroke-width="1.38569"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        ></path>
-                        <path
-                            d="M1.48828 3.45867C1.48828 2.43828 2.31547 1.61108 3.33587 1.61108H14.6635C15.6839 1.61108 16.5111 2.43828 16.5111 3.45867V5.99204H1.48828V3.45867Z"
-                            fill="currentColor"
-                            stroke="currentColor"
-                            stroke-width="1.38569"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        ></path>
-                    </svg> */}
+                        {/* Fill - hovered (your commented svg) */}
+                        <svg
+                            className="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 18 22"
+                            fill="none"
+                        >
+                            <path
+                                opacity="0.4"
+                                d="M1.48828 16.6148V15.1063C1.48828 11.6948 1.48897 10.6125 1.48828 9.42075C2.74018 9.42073 5.45877 9.42073 8.99967 9.42073C12.5405 9.42073 15.2592 9.41996 16.5111 9.4208C16.5111 10.6727 16.5111 11.6948 16.5111 15.1063V16.6148C16.5111 18.7798 16.5111 19.8623 15.7855 20.2498C14.3802 21.0001 11.7443 18.4967 10.4926 17.743C9.76659 17.3058 9.4036 17.0872 8.99967 17.0872C8.59575 17.0872 8.23276 17.3058 7.50678 17.743C6.25501 18.4967 3.61914 21.0001 2.21393 20.2498C1.48828 19.8623 1.48828 18.7798 1.48828 16.6148Z"
+                                fill="currentColor"
+                                stroke="currentColor"
+                                strokeWidth="1.38569"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            />
+                            <path
+                                d="M1.48828 3.45867C1.48828 2.43828 2.31547 1.61108 3.33587 1.61108H14.6635C15.6839 1.61108 16.5111 2.43828 16.5111 3.45867V5.99204H1.48828V3.45867Z"
+                                fill="currentColor"
+                                stroke="currentColor"
+                                strokeWidth="1.38569"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            />
+                        </svg>
                     </button>
                 </IconHover>
+
+                {/* Others */}
                 <IconHover label="Others">
-                    <button className="size-9 flex justify-center items-center [&_svg]:size-5.5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <button className="size-9 flex justify-center items-center [&_svg]:size-5.5 group relative">
+                        {/* Stroke - default */}
+                        <svg
+                            className="absolute transition-opacity duration-300 opacity-100 group-hover:opacity-0"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                        >
                             <path
                                 d="M20.1667 7.58075V3.87742C20.1667 2.41992 19.58 1.83325 18.1225 1.83325H14.4192C12.9617 1.83325 12.375 2.41992 12.375 3.87742V7.58075C12.375 9.03825 12.9617 9.62492 14.4192 9.62492H18.1225C19.58 9.62492 20.1667 9.03825 20.1667 7.58075Z"
                                 stroke="currentColor"
                                 strokeWidth="1.5"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                            ></path>
+                            />
                             <path
                                 d="M9.62565 7.80992V3.64825C9.62565 2.35575 9.03898 1.83325 7.58148 1.83325H3.87815C2.42065 1.83325 1.83398 2.35575 1.83398 3.64825V7.80075C1.83398 9.10242 2.42065 9.61575 3.87815 9.61575H7.58148C9.03898 9.62492 9.62565 9.10242 9.62565 7.80992Z"
                                 stroke="currentColor"
                                 strokeWidth="1.5"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                            ></path>
+                            />
                             <path
                                 d="M9.62565 18.1225V14.4192C9.62565 12.9617 9.03898 12.375 7.58148 12.375H3.87815C2.42065 12.375 1.83398 12.9617 1.83398 14.4192V18.1225C1.83398 19.58 2.42065 20.1667 3.87815 20.1667H7.58148C9.03898 20.1667 9.62565 19.58 9.62565 18.1225Z"
                                 stroke="currentColor"
                                 strokeWidth="1.5"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                            ></path>
-                            <path d="M13.75 14.2083H19.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"></path>
-                            <path d="M13.75 17.875H19.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"></path>
+                            />
+                            <path d="M13.75 14.2083H19.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                            <path d="M13.75 17.875H19.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                        </svg>
+                        {/* Fill - hovered */}
+                        {/* Fill - hovered */}
+                        <svg
+                            className="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                        >
+                            {/* Top-left box - fully filled */}
+                            <path
+                                d="M9.62565 7.80992V3.64825C9.62565 2.35575 9.03898 1.83325 7.58148 1.83325H3.87815C2.42065 1.83325 1.83398 2.35575 1.83398 3.64825V7.80075C1.83398 9.10242 2.42065 9.61575 3.87815 9.61575H7.58148C9.03898 9.62492 9.62565 9.10242 9.62565 7.80992Z"
+                                fill="currentColor"
+                            />
+                            {/* Top-right box - faded like the others */}
+                            <path
+                                d="M20.1667 7.58075V3.87742C20.1667 2.41992 19.58 1.83325 18.1225 1.83325H14.4192C12.9617 1.83325 12.375 2.41992 12.375 3.87742V7.58075C12.375 9.03825 12.9617 9.62492 14.4192 9.62492H18.1225C19.58 9.62492 20.1667 9.03825 20.1667 7.58075Z"
+                                fill="currentColor"
+                                opacity="0.4"
+                            />
+                            {/* Bottom-left box - faded */}
+                            <path
+                                d="M9.62565 18.1225V14.4192C9.62565 12.9617 9.03898 12.375 7.58148 12.375H3.87815C2.42065 12.375 1.83398 12.9617 1.83398 14.4192V18.1225C1.83398 19.58 2.42065 20.1667 3.87815 20.1667H7.58148C9.03898 20.1667 9.62565 19.58 9.62565 18.1225Z"
+                                fill="currentColor"
+                                opacity="0.4"
+                            />
+                            {/* Lines */}
+                            <path d="M13.75 14.2083H19.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                            <path d="M13.75 17.875H19.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                         </svg>
                     </button>
                 </IconHover>
