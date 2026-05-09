@@ -1,3 +1,4 @@
+"use client";
 import { IconHover } from "../ui/IconHover";
 
 const Navbar = () => {
@@ -6,9 +7,9 @@ const Navbar = () => {
             <div className="flex items-center gap-2.5">
                 <button className="group flex size-8.5 min-w-8.5 cursor-pointer items-center justify-center rounded-full bg-primary-7 active:scale-90 [&_svg]:size-4.5 lg:hidden text-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path d="M2.25 5.25H15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-                        <path d="M2.25 9H15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-                        <path d="M2.25 12.75H15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                        <path d="M2.25 5.25H15.75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"></path>
+                        <path d="M2.25 9H15.75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"></path>
+                        <path d="M2.25 12.75H15.75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"></path>
                     </svg>
                 </button>
                 <div className="space-y-0.5">

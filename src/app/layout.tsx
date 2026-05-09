@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import LeftIconPanael from "@/components/shared/LeftIconPanael";
 import Navbar from "@/components/shared/Navbar";
+import SurahList from "@/components/shared/SurahList";
+import SettingPanel from "@/components/shared/SettingPanel";
 
 // ================= ENGLISH FONT =================
 const inter = Inter({
@@ -74,7 +76,15 @@ export default function RootLayout({
 
                 <div className="lg:ml-15 h-screen overflow-y-auto custom-scrollbar">
                     <Navbar></Navbar>
-                    <div>{children}</div>
+                    <div>
+                        <div className="hidden lg:block w-83.5 border-r border-border min-h-screen">
+                            <SurahList></SurahList>
+                        </div>
+                        <div>{children}</div>
+                        <div className="hidden md:block">
+                            <SettingPanel></SettingPanel>
+                        </div>
+                    </div>
                 </div>
             </body>
         </html>
