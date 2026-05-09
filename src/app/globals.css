@@ -97,5 +97,5 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color-text-secondary);
+    background-color: var(--color-primary);
 }
