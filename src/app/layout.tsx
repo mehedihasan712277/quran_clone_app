@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import LeftIconPanael from "@/components/shared/LeftIconPanael";
+import Navbar from "@/components/shared/Navbar";
 
 // ================= ENGLISH FONT =================
 const inter = Inter({
@@ -66,11 +67,15 @@ export default function RootLayout({
                 h-full antialiased
             `}
         >
-            <body className="h-screen overflow-hidden">
+            <body className="h-screen overflow-hidden ">
                 <div className="fixed lg:top-0 bottom-0 left-0 h-15 w-screen lg:w-15 lg:h-screen">
                     <LeftIconPanael></LeftIconPanael>
                 </div>
-                <div className="lg:ml-15">{children}</div>
+
+                <div className="lg:ml-15 h-screen overflow-y-auto custom-scrollbar">
+                    <Navbar></Navbar>
+                    <div>{children}</div>
+                </div>
             </body>
         </html>
     );
